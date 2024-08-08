@@ -15,8 +15,8 @@ cat.sayHello(0);
 Console.Write("scared");
 cat.sayHello(1);
 
-Console.WriteLine("------------------------");
-Dog dog = new Dog( 0);
+Console.WriteLine();
+Dog dog = new Dog(0);
 Console.WriteLine("dog:");
 Console.WriteLine("carnivorous" + dog.isCarnivorous());
 Console.WriteLine("mammals" + dog.isMammals());
@@ -28,7 +28,7 @@ dog.sayHello(0);
 Console.Write("scared");
 dog.sayHello(1);
 
-Console.WriteLine("------------------------");
+Console.WriteLine();
 Frog frog = new Frog(0);
 Console.WriteLine("frog:");
 Console.WriteLine("carnivorous" + frog.isCarnivorous());

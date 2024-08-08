@@ -9,6 +9,7 @@ namespace Object_Oriented_Assignment_Animals
     public interface Water
     {
         public bool hasGills();
+
         public bool hasLaysEggs();
     }
 }

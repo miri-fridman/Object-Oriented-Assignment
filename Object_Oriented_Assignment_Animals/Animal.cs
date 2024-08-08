@@ -15,22 +15,23 @@ namespace Object_Oriented_Assignment_Animals
         public const int MOOD_HAPPY = 0;
         public const int MOOD_SCARE = 1;
         protected int mood;
-       
+
         public Animal(bool mammals, bool carnivorous, int mood)
         {
             this.mammals = mammals;
             this.carnivorous = carnivorous;
-            switch(mood){
-                case MOOD_HAPPY: 
-                    this.mood = mood; 
+            switch (mood)
+            {
+                case MOOD_HAPPY:
+                    this.mood = mood;
                     break;
-                case MOOD_SCARE: 
-                    this.mood = mood; 
+                case MOOD_SCARE:
+                    this.mood = mood;
                     break;
-                default: 
+                default:
                     throw new Exception("ERROR: invalid mood");
             }
-          
+
         }
 
         public void sayHello()

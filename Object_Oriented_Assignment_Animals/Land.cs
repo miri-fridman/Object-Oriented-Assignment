@@ -9,6 +9,5 @@ namespace Object_Oriented_Assignment_Animals
     public interface Land
     {
         public int GetNumberOfLegs();
-        
     }
 }

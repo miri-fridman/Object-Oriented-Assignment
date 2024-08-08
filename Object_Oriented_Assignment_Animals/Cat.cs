@@ -9,16 +9,17 @@ namespace Object_Oriented_Assignment_Animals
     public class Cat : Animal, Land
     {
         private int numberOfLegs = 4;
+
+        //The attributes mammal and carnivore are known in advance,
+        //therefore, in my opinion, there is no need to receive these attributes in the Cat ctor,
+        //they can be automatically sent to the Animal ctor like this:
         public Cat(int mood) : base(true, true, mood)
         {
         }
 
+        //I added this function according to the class diagram, but in my opinion it is unnecessary
         public Cat(bool mammals, bool carnivorous, int mood) : base(true, true, mood)
         {
-        }
-        public int GetNumberOfLegs()
-        {
-            return numberOfLegs;
         }
 
         public void sayHello()
@@ -41,7 +42,7 @@ namespace Object_Oriented_Assignment_Animals
             }
         }
 
-        int Land.GetNumberOfLegs()
+        public int GetNumberOfLegs()
         {
             return numberOfLegs;
         }
