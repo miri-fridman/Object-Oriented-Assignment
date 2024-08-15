@@ -34,15 +34,10 @@ namespace Object_Oriented_Assignment_Animals
 
         }
 
-        public void sayHello()
-        {
-
-        }
-
-        public void sayHello(int mood)
-        {
-
-        }
+        abstract public void sayHello();
+       
+        abstract public void  sayHello(int mood);
+        
 
         public bool isMammals()
         {

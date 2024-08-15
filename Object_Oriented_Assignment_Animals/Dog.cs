@@ -23,12 +23,12 @@ namespace Object_Oriented_Assignment_Animals
 
         }
 
-        public void sayHello()
+        override public void sayHello()
         {
             Console.WriteLine("wagging their tails");
         }
 
-        public void sayHello(int mood)
+        override public void sayHello(int mood)
         {
             switch (mood)
             {

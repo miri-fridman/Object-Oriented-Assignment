@@ -43,4 +43,7 @@ frog.sayHello(0);
 Console.Write("scared");
 frog.sayHello(1);
 
+Animal[]a=new Animal[5];
+a[0]=new Frog(0);
+Console.WriteLine(  "a[0]"); a[0].sayHello(0);
 

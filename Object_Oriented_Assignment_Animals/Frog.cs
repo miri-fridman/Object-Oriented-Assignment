@@ -33,7 +33,7 @@ namespace Object_Oriented_Assignment_Animals
             return true;
         }
 
-        public void sayHello(int mood)
+       override public void sayHello(int mood)
         {
             switch (mood)
             {
@@ -41,7 +41,7 @@ namespace Object_Oriented_Assignment_Animals
                     Console.WriteLine("quack quack quack");
                     break;
                 case MOOD_SCARE:
-                    Console.WriteLine("\"plop into the water");
+                    Console.WriteLine("plop into the water");
                     break;
                 default:
                     throw new Exception("ERROR: invalid mood");
@@ -53,5 +53,9 @@ namespace Object_Oriented_Assignment_Animals
             return numberOfLegs;
         }
 
+        public override void sayHello()
+        {
+            Console.WriteLine("plop into the water");
+        }
     }
 }
